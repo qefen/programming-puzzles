@@ -1,4 +1,4 @@
-# Shuffle Array
+# Remove Vowels
 
 Given a string, remove the vowels from the string and return the string without vowels.
 
@@ -11,19 +11,22 @@ Output : wht s yr nm ?
 
 ## Template
 
-_remove_vowels_test.ts_
+_remove_vowels_test.py_
 
-```ts
-import { assertEquals } from "testing/asserts.ts";
+```py
+import unittest
 
-function removeVowels(str: string) {
-  // Write your solution
-}
+def removeVowels(text):
+    #Write your code here
+    return 
 
-Deno.test("removeVowels", () => {
-  let actual = removeVowels("what is your name ?");
-  let expected = "wht s yr nm ?";
+class Vowels(unittest.TestCase):
+    def test(self):
+        actual  = removeVowels("what is your name ?")
+        expected = "wht s yr nm ?";
+        self.assertEqual(actual,expected)
 
-  assertEquals(actual, expected);
+if __name__ == '__main__':
+    unittest.main()
 });
 ```
